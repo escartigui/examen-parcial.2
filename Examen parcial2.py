@@ -3,7 +3,7 @@ class Menu:
         if b == 0:
             return 0
         else:
-            return self.mcd(b % a, b)
+            return self.mcd(b, a % b)
 
     def palabraencadena(self, r):
         if r =="":
@@ -31,24 +31,25 @@ class Menu:
 class menu:
     def __init__(self):
         self.prueba = Menu()
+def mostrar(self):
+     while True:
+      print("MENU")
+      print("1.Calcular Mcd")
+      print("2.Repetir una palabra")
+      print("3.repetir palabras")
+      print("4.convertir decimal a binario")
+      print("5.calcular cuantos digitos tiene un numero")
+      print("6.SALIR")
 
-    while True:
-     print("MENU")
-     print("1.Calcular Mcd")
-     print("2.Repetir una palabra")
-     print("3.repetir palabras")
-     print("4.convertir decimal a binario")
-     print("5.calcular cuantos digitos tiene un numero")
-     print("6.SALIR")
+      op = int(input("Ingresa una opcion: "))
 
-     op = int(input("Ingresa una opcion: "))
+      if op == 1:
+       a = int(input("Ingresa un numero: "))
+       b = int(input("Ingresa otro numero: "))
+       print(f"la respuesta es {self.mcd(b,a)}")
 
-     if op == 1:
-      a = int(input("Ingresa un numero: "))
-      b = int(input("Ingresa otro numero: "))
-
-     if op == 2:
-      palabras = int(input("Ingresa una palabra: "))
+      if op == 2:
+       palabras = int(input("Ingresa una palabra: "))
 
       if op == 3:
           n = input("Ingrese un texto: ")
@@ -56,11 +57,10 @@ class menu:
       if op == 4:
           print("wena noche")
 
-     if op == 5:
+      if op == 5:
          dato = int(input("Ingrese el numero para calcular sus digitos: "))
 
 
-     if op == 6:
+      if op == 6:
           print("Hasta que nos volvamos a ver")
-     break
-    menu = Menu
+mostrar(menu)
