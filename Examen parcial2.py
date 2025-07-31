@@ -31,7 +31,7 @@ class Menu:
 class menu:
     def __init__(self):
         self.prueba = Menu()
-def mostrar(self):
+    def mostrar(self):
      while True:
       print("MENU")
       print("1.Calcular Mcd")
@@ -63,4 +63,4 @@ def mostrar(self):
 
       if op == 6:
           print("Hasta que nos volvamos a ver")
-mostrar(menu)
+menu.mostrar()
