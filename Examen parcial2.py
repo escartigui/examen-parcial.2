@@ -46,7 +46,8 @@ class menu:
       if op == 1:
        t = int(input("Ingresa un numero: "))
        r = int(input("Ingresa otro numero: "))
-       print(f"la respuesta es {self.prueba.mcd(t,r)}")
+       resultado = self.prueba.mcd(t,r)
+       print(f"la respuesta es {resultado}")
 
       if op == 2:
        palabras = int(input("Ingresa una palabra: "))
