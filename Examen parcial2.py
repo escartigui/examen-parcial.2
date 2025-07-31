@@ -1,10 +1,9 @@
-class Menu():
-
-    def Mcd(self, a, b):
+class Menu:
+    def mcd(self, a, b):
         if b == 0:
             return 0
         else:
-            return self.Mcd(b % a, b)
+            return self.mcd(b % a, b)
 
     def palabraencadena(self, r):
         if r =="":
@@ -29,7 +28,7 @@ class Menu():
             return n * self.cadenarepetida(n)
 
 
-class menu():
+class menu:
     def __init__(self):
         self.prueba = Menu()
 
