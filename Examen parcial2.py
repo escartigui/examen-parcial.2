@@ -10,7 +10,7 @@ class Menu:
             return 0
         else:
             if r[0] == "":
-                return 1
+             return 1
             else:
                 self.palabraencadena(r[1:])
         return 1 + self.palabraencadena(r[1:])
@@ -44,12 +44,13 @@ class menu:
       op = int(input("Ingresa una opcion: "))
 
       if op == 1:
-       a = int(input("Ingresa un numero: "))
-       b = int(input("Ingresa otro numero: "))
-       print(f"la respuesta es {self.mcd(b,a)}")
+       t = int(input("Ingresa un numero: "))
+       r = int(input("Ingresa otro numero: "))
+       print(f"la respuesta es {self.prueba.mcd(t,r)}")
 
       if op == 2:
        palabras = int(input("Ingresa una palabra: "))
+       print(f"la palabra es {self.prueba.palabraencadena(palabras)}")
 
       if op == 3:
           n = input("Ingrese un texto: ")
@@ -63,4 +64,6 @@ class menu:
 
       if op == 6:
           print("Hasta que nos volvamos a ver")
+
+menu = menu()
 menu.mostrar()
